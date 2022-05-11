@@ -1,0 +1,84 @@
+// USUARIOS
+
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Guillermo Rodriguez",
+    "age": "57",
+    "email": "guillrod@hotmail.com"
+}
+
+###
+
+GET http://localhost:9000/api/users HTTP/1.1
+
+
+###
+GET http://localhost:9000/api/users/627535e2c4f348270a966383 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/627535e2c4f348270a966383 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Roberto Perez",
+    "age": "80",
+    "email": "robertoperez@hotmail.com"
+}
+
+
+###
+DELETE http://localhost:9000/api/users/627535e2c4f348270a966383 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Roberto Perez",
+    "age": "80",
+    "email": "robertoperez@hotmail.com"
+}
+
+
+
+// PELICULAS 
+
+
+###
+POST http://localhost:9000/api/peliculas HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Forest Gump",
+    "año": "1994",
+    "trama": "Sentado en un banco en Savannah, Georgia, Forrest Gump espera al autobús. Mientras éste tarda en llegar, el joven cuenta su vida a las personas que se sientan a esperar con él. Aunque sufre un pequeño retraso mental, esto no le impide hacer cosas maravillosas."
+}
+
+###
+
+GET http://localhost:9000/api/peliculas HTTP/1.1
+
+
+###
+GET http://localhost:9000/api/peliculas/6279a5c8ca233112b3cd32ad HTTP/1.1
+
+###
+PUT http://localhost:9000/api/peliculas/6279a5c8ca233112b3cd32ad HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "El hombre araña",
+    "año": "2002",
+    "trama": "Luego de sufrir la picadura de una araña genéticamente modificada, un estudiante de secundaria tímido y torpe adquiere increíbles capacidades como arácnido. Pronto comprenderá que su misión es utilizarlas para luchar contra el mal y defender a sus vecinos."
+}
+
+
+###
+DELETE http://localhost:9000/api/users/6279a5c8ca233112b3cd32ad HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "El hombre araña",
+    "año": "2002",
+    "trama": "Luego de sufrir la picadura de una araña genéticamente modificada, un estudiante de secundaria tímido y torpe adquiere increíbles capacidades como arácnido. Pronto comprenderá que su misión es utilizarlas para luchar contra el mal y defender a sus vecinos."
+}
